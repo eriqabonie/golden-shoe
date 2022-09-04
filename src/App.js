@@ -1,8 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Slider from './components/Slider';
+import Promoted from './components/Promoted';
+import Header from './components/Header';
 
 function App() {
   return (
+    <>
+    <Header />
+    <Navbar />
+    <Slider />
+    <Promoted />
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -19,6 +29,8 @@ function App() {
         </a>
       </header>
     </div>
+    <Footer />
+    </>
   );
 }
 
